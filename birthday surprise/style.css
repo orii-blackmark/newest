@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content-box {
+    /*  background: #fff;*/
+    background: linear-gradient(180deg, #3449, #fff);
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    min-height: 60vh;
+    overflow: auto;
+}
+
+.content-box form .input {
+    margin: 10px 0 20px 0;
+}
+
+.content-box form .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.content-box form .btn .btn1 {
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 20px;
+    color: rgb(13, 88, 94);
+}
+
+.content-box form .btn .btn1:hover {
+    cursor: pointer;
+    font-size: 20px;
+    border: 3px;
+    height: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 15px 15px -20px rgba(0, 0, 0, 0.5);
+}
+
+.content-box form .btn input {
+    width: 100%;
+    height: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 15px 15px -20px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: bolder;
+    outline: none;
+    color: rgb(224, 11, 11);
+
+}
+
+.content-box form {
+    margin-top: 40px;
+}
+
+.content-box form .input input {
+    height: 45px;
+    border: none;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 15px;
+    color: rgb(139, 0, 35);
+    border-radius: 5px;
+    font-size: 17px;
+    background: rgb(231, 219, 219);
+    width: 70%;
+
+}
+
+.content-box .header {
+    max-width: 100%;
+    margin: auto;
+}
+
+/*rgb(8, 99, 102)*/
+.content-box .header h3 {
+    font-size: 35px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: cursive;
+    height: 85px;
+    background: linear-gradient(45deg, red, blue);
+
+
+}
+
+.content-box .up {
+    border: 3px solid #333;
+    border-radius: 30px;
+
+}
+
+.content-box .down {
+    border: 4px solid #333;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.content-box .link {
+    max-width: 90%;
+    text-align: center;
+    padding: 5px 15px 0 15px;
+    margin: auto;
+
+}
+
+.content-box .link p {
+    font-size: 17px;
+    color: rgb(6, 8, 138);
+    text-align: center;
+    font-weight: 500;
+}
+
+.content-box .link form .btn2 {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(45deg, red, blue);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 15px 15px -20px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 20px;
+    color: #fff;
+    outline: none;
+    padding: 5px;
+}
+
+.content-box .link form .btn2:hover {
+    border: 3px;
+    font-size: 21px;
+}
+
+.content-box .link form {
+    margin-bottom: 40px;
+}
+
+.content-box .copyright {
+    color: #333;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.content-box h4 {
+    font-size: 18px;
+}
+
+
+/* Designing dialog box */
+#container {
+    display: none;
+    background-image: linear-gradient(to right, #a8190f, #325fc0);
+    background-size: cover;
+    color: white;
+    position: absolute;
+    width: 350px;
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -160px;
+    padding: 16px 8px 8px;
+    box-sizing: border-box;
+}
+
+/* Designing dialog box's okay button */
+#container .yes {
+    background-color: #961a1a;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 5px 15px;
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    float: right;
+}
+
+#container .no {
+    background-color: #20398a;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 18px;
+    width: 95px;
+    float: inline-end;
+
+}
+
+#container .yes:hover {
+    background-color: #20398a;
+}
+
+#container .no:hover {
+    background-color: #961a1a;
+}
+
+/* Dialog box message decorating */
+#container .message {
+    text-align: left;
+    padding: 10px 30px;
+}
+
+marquee {
+    background: linear-gradient(45deg, red, blue);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    padding-top: 8px;
+    font-weight: bolder;
+    color: #ccc;
+    width: 85%;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 15px 15px -20px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
